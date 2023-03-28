@@ -1,0 +1,162 @@
+@use "./variables//variables" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Grotesk";
+  row-gap: 50px;
+  padding: 4rem 3rem;
+
+  a {
+    display: block;
+    padding: 16px 50px;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0.900881px solid #74bf44;
+
+    font-family: inherit;
+  }
+
+  .text {
+    font-family: "Grotesk";
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      font-size: 6vmax;
+      font-weight: 700;
+      line-height: 110%;
+      background: linear-gradient(
+        180deg,
+        #00963f 0%,
+        #0069b3 46.35%,
+        rgba(0, 150, 63, 0.99) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      mix-blend-mode: normal;
+
+      overflow-wrap: break-all;
+    }
+  }
+
+  .ctaWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 30px;
+
+    width: 100%;
+
+    a:nth-of-type(1) {
+      background-color: $primary-button-color;
+      color: white;
+    }
+
+    a:nth-of-type(2) {
+      color: $primary-link-color;
+    }
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+    align-items: center;
+
+    > div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      width: 270px;
+
+      align-items: flex-start;
+      justify-content: space-between;
+
+      font-weight: 700;
+      max-width: 414px;
+      height: 205px;
+
+      box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      padding: 2rem;
+
+      .data {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        svg {
+          align-self: flex-end;
+        }
+        > span {
+          font-size: 48px;
+
+          display: contents;
+
+          > .supsub {
+            sup,
+            sub {
+              position: relative;
+              display: block;
+              font-size: 12px;
+              line-height: 1.2;
+            }
+            sup {
+              bottom: 1em;
+            }
+            sub {
+              top: 1em;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(1) {
+        color: #192f5d;
+        background: rgba(220, 224, 235, 0.7);
+      }
+      &:nth-of-type(2) {
+        color: #be690b;
+        background: rgba(255, 250, 245, 0);
+      }
+      &:nth-of-type(3) {
+        color: #525050;
+        background: rgba(248, 248, 248, 0.7);
+      }
+
+      .trendIcon {
+        width: 50px;
+        height: 50px;
+
+        border: none;
+        border-radius: 50%;
+
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 310px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

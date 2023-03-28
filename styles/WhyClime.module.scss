@@ -1,0 +1,65 @@
+@use "../styles/variables/variables" as *;
+.container {
+  color: black;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  row-gap: 1rem;
+  font-family: "Grotesk";
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .headerText {
+    align-items: flex-start;
+    row-gap: 20px;
+    span {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      h1 {
+        font-size: 48px;
+        color: #0087d2;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      font-family: " Space Grotesk";
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .reveal {
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+
+    position: relative;
+
+    .video {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+    }
+
+    .playButton {
+      position: absolute;
+
+      width: max-content;
+      background-color: $primary-button-color;
+      color: white;
+      padding: 16px 30px;
+      border: none;
+      border-radius: 4px;
+      align-self: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

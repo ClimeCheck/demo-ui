@@ -1,0 +1,34 @@
+.container {
+  .wrapper {
+    position: relative;
+    background: linear-gradient(
+      113.75deg,
+      #000000 25.42%,
+      rgba(0, 70, 109, 0.49) 151.69%,
+      rgba(0, 111, 173, 0.25) 174.6%
+    );
+    opacity: 0.97;
+    background-size: cover;
+
+    padding: 0 3rem;
+
+    &:nth-child(1) {
+      margin-inline: calc(-3rem); // half of the parent padding
+    }
+
+    video {
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.18;
+    }
+
+    @media (max-width: 400px) {
+      padding: 0 1.5rem;
+    }
+  }
+}

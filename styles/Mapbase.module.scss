@@ -1,0 +1,91 @@
+@use "../styles/variables/variables" as *;
+.container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  row-gap: 1rem;
+  font-family: "Grotesk";
+  background-color: white;
+  h1 {
+    color: #0087d2;
+    text-align: center;
+
+    font-size: 48px;
+  }
+
+  .continentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1vmax;
+    font-weight: 500;
+    .continent {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      > div {
+        width: 29px;
+        height: 10px;
+      }
+
+      .africa {
+        background-color: #f28d20;
+      }
+      .asia {
+        background-color: #ffcc01;
+      }
+      .australia {
+        background-color: #e40613;
+      }
+      .europe {
+        background-color: #0069b3;
+      }
+      .northAmerica {
+        background-color: #00963f;
+      }
+      .southAmerica {
+        background-color: #ffcc01;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+    column-gap: 8px;
+    color: #525252;
+  }
+
+  a,
+  button {
+    width: max-content;
+    background-color: $primary-button-color;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 4px;
+    align-self: center;
+  }
+}
+
+.testClass {
+  g {
+    &:hover {
+      [data-continent-name] {
+        display: block;
+      }
+    }
+  }
+  svg {
+    width: 520px;
+    height: 300px;
+    border: 1px solid red;
+
+    display: none;
+  }
+}
