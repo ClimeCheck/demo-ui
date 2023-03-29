@@ -181,7 +181,7 @@ const Card = ({ innerRef, pos, data }) => {
       <h4 className="text-center font-bold">Climate Factors</h4>
       <div className="flex justify-between items-center gap-x-12 py-2 ">
         <span className="">Cabondioxide</span>
-        <span className="text-[#F45B62]">&#129045; 33</span>
+        <span className="text-[#F45B62]"> 33</span>
       </div>
 
       <div className="flex justify-between items-center gap-x-12 py-2">
@@ -190,7 +190,7 @@ const Card = ({ innerRef, pos, data }) => {
       </div>
       <div className="flex justify-between items-center gap-x-12 py-2">
         <span>Global Temperature</span>
-        <span className="text-[#88C032]">&#129045; {data[0]}</span>
+        <span className="text-[#88C032]"> {data[0]}</span>
       </div>
       <div className="flex justify-between items-center gap-x-12 py-2">
         <span>Sea Level</span>
