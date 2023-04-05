@@ -34,10 +34,11 @@ const Navbar = () => {
   return (
     <div
       ref={headerRef}
-      className="flex  justify-between py-8 w-full px-[3rem] bg-transparent relative md:bg-transparent"
+      className="flex  justify-between w-full px-[3rem] bg-transparent relative md:bg-transparent"
     >
       <div className="w-32 ">
-        <img src={Logo.src} alt="" className=" object-cover  w-full" />
+        <img src='/icon.svg' alt="" className=" object-cover  w-full" />
+
       </div>
 
       <nav className="hidden md:flex justify-center gap-x-6 items-center text-white mx-auto">

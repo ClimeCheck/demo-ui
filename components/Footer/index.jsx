@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Logo } from "../../assets/images";
 
@@ -6,10 +6,11 @@ import { aboutLinks, exploreLinks } from "./FooterData";
 
 function Footer() {
   return (
-    <div className="grid justify-evenly px-auto  py-16 bg-black text-white  gap-14 sm:flex font-Grotesk overflow-hidden">
+    <div className="grid justify-evenly py-12 bg-black text-white  gap-14 sm:flex font-Grotesk overflow-hidden">
       <div>
         <Link href="/">
-          <Image src={Logo} alt="logo" />
+          <img src='/icon.svg' alt="logo"  className="w-full"/>
+          
         </Link>
       </div>
       <div className="grid">
